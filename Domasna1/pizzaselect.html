@@ -1,67 +1,100 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Papas Pizzeria</title>
-  </head>
-  <body>
-    <h1>PAPAS PIZZERIA</h1>
-    <h3>PLACE YOUR ORDER HERE</h3>
-    <form action="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-      <p>
-        <strong>Select your pizza size:</strong>
-        <br />
-        <label>
-          Large
-          <input name="Large" type="radio" value="Large" />
-        </label>
-        <br />
-        <label>
-          XLarge
-          <input name="Large" type="radio" value="Large" />
-        </label>
-      </p>
 
-      <p>
-        <label><strong> Select pizza crust:</strong><br /></label>
-        <select name="Crust">
-          <option selected>Normal</option>
-          <option>Thin Crust</option>
-          <option>Deep Dish</option>
-          <option>Cheesy Crust</option>
-        </select>
-      </p>
-      <p>
-        <strong>Toppings</strong>
+<head>
+  <meta charset="utf-8" />
+  <title>Papa's Pizzeria</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+
+    h3 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>PAPA'S PIZZERIA</h1>
+    <hr />
+  </header>
+  <h3>PLACE YOUR ORDER HERE</h3>
+  <form action="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+    <p>
+      <strong>Select your pizza size:</strong>
+      <br />
+      <label>
+        Large
+        <input name="size" type="radio" value="L" />
+      </label>
+      <br />
+      <label>
+        Extra Large
+        <input name="size" type="radio" value="XL" />
         <br />
-        <label>
-          Peperoni
-          <input name="Large" type="checkbox" value="Large" />
-        </label>
-        <br />
-        <label>
-          Onion
-          <input name="Large" type="checkbox" value="Large" />
-        </label>
-      </p>
-      <p>
-        <label>
-          Name:
-          <input name="name" type="text" size="25" />
-        </label>
-        <br />
-        <label for="phone">
-          Phone:
-          <input type="tel" placeholder="+###-##-###-###" pattern="\+\+\d{3}-\+\d{2}-\+\d{3}-\+\d{3}\" required/>
-        +###-##-###-###
-        </label>
-        <br />
-        <textarea name="comments" rows="6" cols="36">Leave a message</textarea>
-      </p>
-      <p>
-        <input type="submit" value="Submit">
-        <input type="reset" value="Clear">
-     </p>
-    </form>
-  </body>
+      </label>
+      <label>
+        Largest
+        <input name="size" type="radio" value="XXL" />
+      </label>
+    </p>
+
+    <p>
+      <label><strong> Select pizza crust:</strong><br /></label>
+      <select name="Crust">
+        <option selected>Normal</option>
+        <option>Thin Crust</option>
+        <option>Deep Dish</option>
+        <option>Cheesy Crust</option>
+      </select>
+    </p>
+    <p>
+      <strong>Toppings</strong>
+      <br />
+      <label>
+        Peperoni
+        <input name="toppings" type="checkbox" value="Peperoni" />
+      </label>
+      <br />
+      <label>
+        Onion
+        <input name="toppings" type="checkbox" value="Onion" />
+      </label>
+      <br />
+      <label>
+        Mushrooms
+        <input name="toppings" type="checkbox" value="Shrooms" />
+      </label>
+      <br />
+      <label>
+        Jalapenos
+        <input name="toppings" type="checkbox" value="Spicy" />
+      </label>
+    </p>
+    <p>
+      <label>
+        Name:
+        <input name="name" type="text" placeholder="Your Name Here" size="25" required />
+      </label>
+      <br />
+      <label for="phone">
+        Phone:
+        <input type="tel" placeholder="+###-##-###-###" pattern="\+\d{3}-\d{2}-\d{3}-\d{3}" required />
+      </label>
+      <br />
+      <textarea name="comments" rows="6" cols="36">Leave a message</textarea>
+    </p>
+    <p>
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Clear" />
+    </p>
+  </form>
+</body>
+
 </html>
