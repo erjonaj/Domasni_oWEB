@@ -75,6 +75,9 @@ body {
     font-family: "Sauce Tomato";
     text-align: center;
 }
+option>p{
+    font-family: "Sauce Tomato";
+}
 
 .options {
     p {
@@ -93,8 +96,8 @@ body {
     display: flex;
     align-items: center;
     cursor: pointer;
-    margin-top: -0.5%;
-    margin-bottom: -0.5%;
+    margin-top: -3px;
+    margin-bottom: -3px;
 }
 
 .checkbox-container input[type="checkbox"] {
