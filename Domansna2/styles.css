@@ -1,0 +1,157 @@
+@font-face {
+    font-family: "Sauce Tomato";
+    src: url(Sauce\ Tomato.otf);
+}
+
+header p {
+    font-size: xx-large;
+    margin-top: 0;
+    padding: 0%;
+    padding-top: 2.5%;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+header {
+    background-color: #f82523;
+    height: 115px;
+}
+
+header .logo {
+    position: absolute;
+    left: 8%;
+    top: 65px;
+    transform: translate(-50%, -50%);
+    max-block-size: 10%;
+    border: 7px solid white;
+    border-radius: 100%;
+}
+
+body {
+    font-family: "Sauce Tomato";
+    font-size: medium;
+    text-align: center;
+}
+
+.size {
+
+    p {
+        font-size: large;
+        margin-bottom: -10px;
+        margin-top: 15px;
+    }
+
+    label {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    input[type="radio"] {
+        display: none;
+    }
+
+    .size-image {
+        opacity: 0.6;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    input[type="radio"]:checked+.size-image {
+        opacity: 1;
+    }
+
+    label:hover .size-image {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
+
+.crust {
+    font-size: larger;
+    font-family: "Sauce Tomato";
+}
+
+.crust select {
+    font-family: "Sauce Tomato";
+    text-align: center;
+}
+
+.options {
+    p {
+        font-size: large;
+        margin-bottom: 3px;
+        margin-top: 10px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: small;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: -0.5%;
+    margin-bottom: -0.5%;
+}
+
+.checkbox-container input[type="checkbox"] {
+    display: none;
+}
+
+.ingredient-text {
+    opacity: 0.6;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.checkbox-container input[type="checkbox"]:checked+.ingredient-text {
+    opacity: 1;
+    transform: scale(1.1);
+    color: #f82523;
+}
+
+
+.checkbox-container:hover .ingredient-text {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+input[type="submit"] {
+    font-family: "Sauce Tomato";
+    background-color: #01a0c7;
+    color: #ffffff;
+    border-width: 0px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: medium;
+}
+
+input[type="reset"] {
+    font-family: "Sauce Tomato";
+    background-color: #f82523;
+    color: #ffffff;
+    border-width: 0px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: medium;
+}
+
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+    border-width: 5px;
+
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+    font-family: "Sauce Tomato";
+    font-size: small;
+    width: min-content;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border-width: 1px;
+}

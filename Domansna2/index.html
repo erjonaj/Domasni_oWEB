@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <title>Papa's Pizzeria</title>
+</head>
+
+<body>
+
+  <header>
+    <p>Order Here!</p>
+    <img src="pizza_logo.png" alt="Logo" class="logo">
+  </header>
+
+  <form action="https://en.wikipedia.org/wiki/Rickrolling">
+
+    <div class="size">
+      <p>Select your pizza size:<br> </p>
+      <label>
+        <input type="radio" name="size" value="L" />
+        <img src="size.png" alt="size" class="size-image">
+      </label>
+      <label>
+        <input type="radio" name="size" value="XL" />
+        <img src="size2.png" alt="size_larger" class="size-image">
+      </label>
+      <label>
+        <input type="radio" name="size" value="XXL" />
+        <img src="size3.png" alt="size_largest" class="size-image">
+      </label>
+    </div>
+
+
+    <div class="crust">
+      <label>Select pizza crust:<br></label>
+      <select>
+        <option selected>Normal</option>
+        <option>Thin Crust</option>
+        <option>Deep Dish</option>
+        <option>Cheesy Crust</option>
+      </select>
+    </div>
+
+    <div class="options">
+      <p>Toppings</p>
+      <label class="checkbox-container">
+        <input name="toppings" type="checkbox" value="Peperoni" />
+        <span class="ingredient-text">Pepperoni</span>
+      </label>
+      <label class="checkbox-container">
+        <input name="toppings" type="checkbox" value="Onion" />
+        <span class="ingredient-text">Onion</span>
+      </label>
+      <label class="checkbox-container">
+        <input name="toppings" type="checkbox" value="Shrooms" />
+        <span class="ingredient-text">Mushrooms</span>
+      </label>
+      <label class="checkbox-container">
+        <input name="toppings" type="checkbox" value="Spicy" />
+        <span class="ingredient-text">Jalapenos</span>
+      </label>
+      <label class="checkbox-container">
+        <input name="toppings" type="checkbox" value="Olives" />
+        <span class="ingredient-text">Olives</span>
+      </label>
+      <label class="checkbox-container">
+        <input name="toppings" type="checkbox" value="Ham" />
+        <span class="ingredient-text">Ham</span>
+      </label>
+    </div>
+    <p>
+      <label>
+        Name:
+        <input name="name" type="text" placeholder="Your Name Here" size="25" required />
+      </label>
+      <br>
+      <label for="phone">
+        Phone:
+        <input type="tel" placeholder="+###-##-###-###" pattern="\+\d{3}-\d{2}-\d{3}-\d{3}" required />
+      </label>
+      <br>
+      <textarea name="comments" rows="5" cols="36" placeholder="Leave a message"></textarea>
+    </p>
+    <p>
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Clear" />
+    </p>
+  </form>
+</body>
+
+</html>
