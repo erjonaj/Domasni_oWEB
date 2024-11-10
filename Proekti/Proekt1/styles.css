@@ -15,7 +15,8 @@ header {
         text-decoration: none;
         padding-right: 20px;
     }
-    a #login{
+
+    a #login {
         padding-right: 0px;
     }
 
@@ -24,18 +25,22 @@ header {
     }
 
     nav {
-        opacity: 30%;
+        opacity: 20%;
         padding: 10px;
         transition: ease-in 0.2s;
         position: fixed;
         top: 0;
         text-align: center;
-        top:3%;
+        top: 3%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 }
-body{background-color: black;}
+
+body {
+    background-color: black;
+}
+
 #home {
     height: 100vh;
     background-image: url(HomePics/homeBackground.jpg);
@@ -61,29 +66,66 @@ body{background-color: black;}
 }
 
 #newcars {
-    height: 110%;
+    /* background-image: url(HomePics/carsBackground.jpg);
+    background-size: cover; */
     background-color: black;
-    
-}
-#newpics img {
-    width: 40vw;
-    margin-left: 11vw;
-    border-bottom: 1px solid white;
-    border-radius: 9%;
-    box-shadow: 2vw;
-}
-#newcars h2 {
-    padding-top: 3vh;
+    height: 100vh;
     display: flex;
-    font-size: 7vw;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    
-}
-.firstcar{
-    margin-top:2vh;
-}
-.thirdcar{
-    margin-top: 14vh;
-    margin-bottom: 10vh;
+
+
+    img {
+        width: 40vw;
+        border-bottom: 1px solid white;
+        border-radius: 9%;
+        box-shadow: 2vw;
+        padding: 10px;
+    }
+
+    h2 {
+        padding-top: 2vh;
+        font-size: 7vw;
+        padding-bottom: 50px;
+    }
+
+
+    #desc {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #cars {
+        display: flex;
+        flex-direction: row;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        opacity: 30%;
+        font-size: small;
+        padding-right: 20px;
+        transition: ease-in 0.2s;
+    }
+
+    a:hover {
+        opacity: 100%;
+    }
+
+    #desc h3 {
+        font-size: 40px;
+    }
+
+    .firstcar {
+        color: #de7211;
+    }
+
+    .secondcar {
+        color: #1c83b7;
+    }
+
+    .thirdcar {
+        color: #6b6b6b;
+    }
 }
