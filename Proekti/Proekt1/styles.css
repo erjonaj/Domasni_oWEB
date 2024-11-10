@@ -37,8 +37,29 @@ header {
     }
 }
 
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    background-color: white;
+    span{
+        color: #747679;
+        font-size: 12px;
+        padding: 10px;
+        padding-bottom: 0;
+    }
+    p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 body {
+    position: relative;
     background-color: black;
+    padding-bottom: 6rem ;
 }
 
 #home {
@@ -57,10 +78,10 @@ body {
     }
 
     #welcome h2 {
-        position: absolute;
-        bottom: 0;
-        padding-left: 33vw;
-        padding-bottom: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        padding-top: 40vh;
         font-size: 3vw;
     }
 }
@@ -69,11 +90,12 @@ body {
     /* background-image: url(HomePics/carsBackground.jpg);
     background-size: cover; */
     background-color: black;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    /* border-bottom:1px solid #ffffff15; */
+    min-height: 100vh;
+    padding-bottom: 5vw;
 
     img {
         width: 40vw;
@@ -84,7 +106,7 @@ body {
     }
 
     h2 {
-        padding-top: 2vh;
+        padding-top: 3vh;
         font-size: 7vw;
         padding-bottom: 50px;
     }
@@ -127,5 +149,49 @@ body {
 
     .thirdcar {
         color: #6b6b6b;
+    }
+}
+
+#used{
+    min-height: 100vh;
+
+    h2{
+        text-align: center;
+        padding-top: 4vh;
+        font-size: 5vw;
+        
+    }
+    span{
+        font-weight: 100;
+        font-size: 3vw;
+    }
+    .carstagram{
+        display: inline-grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3vw;
+        row-gap: 5vw;
+        max-width: 100%;
+        padding: 0 5vw;
+        padding-top: 100px;
+        
+    }
+    .post img{
+        width: 100%;
+        border-radius: 4px;
+    }
+    .post{
+        text-align: center;
+        /* box-shadow: 0px 0px 7px 1px white; */
+        border: 1px solid #ffffff62;
+        border-radius: 4px;
+        transition: ease-in 0.05s;
+    }
+    .post:hover{
+        cursor: pointer;
+        box-shadow: 0px 0px 7px 3px white;
+    }
+    .post p span{
+        font-size: 2vw;
+        padding-right: 1vw;
     }
 }
