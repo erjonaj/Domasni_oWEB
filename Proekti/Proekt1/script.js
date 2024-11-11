@@ -14,6 +14,13 @@ document.querySelector(".popup .close-btn").addEventListener("click", function()
     document.querySelector(".popup").classList.remove("active");
 });
 
+document.querySelector(".popup .signedin").addEventListener("click", function () {
+    loggedin=1
+    document.querySelector(".popup").classList.remove("active");
+    if (loggedin===1) {
+    document.getElementById("login").innerHTML = "Signed in";
+    }
+});
 
 
 //Test Drive Popup
@@ -48,13 +55,6 @@ document.querySelector(".test .submit").addEventListener("click", function(){
     alert("Succefully created a Test Drive Booking.\nYou will be contacted by our team for more details.")
 });
 
-document.querySelector(".popup .signedin").addEventListener("click", function () {
-    loggedin=1
-    document.querySelector(".popup").classList.remove("active");
-    if (loggedin===1) {
-    document.getElementById("login").innerHTML = "Signed in";
-    }
-});
 
 
 
