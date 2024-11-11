@@ -12,15 +12,46 @@ document.querySelector(".popup .close-btn").addEventListener("click", function()
     document.querySelector(".popup").classList.remove("active");
 });
 
+document.querySelector("#tdrive").addEventListener("click", function(){
+    if (loggedin===0) {
+        popupActive();
+        return;
+    }
+    document.querySelector(".test").classList.add("active");
+});
+document.querySelector("#tdrive2").addEventListener("click", function(){
+    if (loggedin===0) {
+        popupActive();
+        return;
+    }
+    document.querySelector(".test").classList.add("active");
+});
+document.querySelector("#tdrive3").addEventListener("click", function(){
+    if (loggedin===0) {
+        popupActive();
+        return;
+    }
+    document.querySelector(".test").classList.add("active");
+});
+
+document.querySelector(".test .close-btn").addEventListener("click", function(){
+    document.querySelector(".test").classList.remove("active");
+});
+
+document.querySelector(".test .submit").addEventListener("click", function(){
+    document.querySelector(".test").classList.remove("active");
+    alert("Succefully created a Test Drive Booking.\nYou will be contacted by our team for more details.")
+});
+
 document.querySelector(".popup .signedin").addEventListener("click", function () {
     loggedin=1
     document.querySelector(".popup").classList.remove("active");
     if (loggedin===1) {
-        alert("you signed in succefully")
+    document.getElementById("login").innerHTML = "Signed in";
     }
 });
 
-likedImage = (image) =>{
+function likedImage(image){
     if (loggedin===0) {
         popupActive();
         return;

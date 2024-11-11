@@ -16,23 +16,57 @@
     </nav>
 </header>
 
+<!-- Pop-Up Login -->
 <div class="popup">
     <div class="close-btn">&times;</div>
     <div class="form">
         <h2>Login</h2>
-        <form action="" method="post">
         <div class="form-element">
             <label for="email">Email</label>
-            <input type="text" id="email" placeholder="Enter email" required>
+            <input type="text" id="email" placeholder="Enter email">
         </div>
         <div class="form-element">
             <label for="password">Password</label>
-            <input type="password" id="password" placeholder="Enter password" required>
+            <input type="password" id="password" placeholder="Enter password">
         </div>
         <div class="form-element">
             <button class="signedin" type="submit">Sign in</button>
         </div>
-    </form>
+    </div>
+</div>
+
+<!-- Test Drive Pop Up -->
+<div class="test">
+    <div class="close-btn">&times;</div>
+    <div class="form">
+        <h2>Book Test Drive</h2>
+        <div class="form-element">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter email">
+        </div>
+        <div class="form-element">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter full name">
+        </div>
+        <div class="form-element">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" placeholder="Enter phone number">
+        </div>
+        <div class="form-element">
+            <label for="model">CARIO Model</label>
+            <select name="model" id="modelselect">
+                <option value="650s">CARIO 650S</option>
+                <option value="570s">CARIO 570S</option>
+                <option value="540c">CARIO 540C</option>
+            </select>
+        </div>
+        <div class="form-element">
+            <label for="datetime">Date/Time for Booking</label>
+            <input type="datetime" id="phone" placeholder="Date/Time" >
+        </div>
+        <div class="form-element">
+            <button class="submit" type="submit">Submit</button>
+        </div>
     </div>
 </div>
 
@@ -53,7 +87,7 @@
             </div>
             <a target="_blank" href="https://cars.mclaren.com/en/legacy/650s" id="details">Details</a>
             <a target="_blank" href="https://www.google.com/search?q=mclaren+650s+reviews">Reviews</a>
-            <a href="deets" id="details">Test Drive</a>
+            <a href="#newcars" id="tdrive">Test Drive</a>
         </div>
 
         <div class="cars">
@@ -63,7 +97,7 @@
             </div>
             <a target="_blank" href="https://cars.mclaren.com/en/sports-series/570s" id="details">Details</a>
             <a target="_blank" href="https://www.google.com/search?q=mclaren+570s+reviews">Reviews</a>
-            <a href="deets" id="details">Test Drive</a>
+            <a href="#newcars" id="tdrive2">Test Drive</a>
         </div>
         <div class="cars">
             <img src="CarPics/540CSide.png" alt="CARIO P1">
@@ -72,7 +106,7 @@
             </div>
             <a target="_blank" href="https://cars.mclaren.com/en/sports-series/540c" id="details">Details</a>
             <a target="_blank" href="https://www.google.com/search?q=mclaren+540c+reviews">Reviews</a>
-            <a href="deets" id="details">Test Drive</a>
+            <a href="#newcars" id="tdrive3">Test Drive</a>
         </div>
     </div>
     <div id="used">
