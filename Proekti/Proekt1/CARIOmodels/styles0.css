@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.car-details {
+    max-width: 100%;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+section{
+    height: 43vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.car-details h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.car-details img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.car-details section {
+    margin-top: 30px;
+    margin: 5%;
+}
+
+.car-details h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.car-details ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1em;
+    color: #cccccc;
+}
+
+.car-details ul li {
+    margin-bottom: 8px;
+}
+
+.car-details p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: #cccccc;
+}
+
+.design{
+    background-image: url(GIFbackgrounds/650sDesign.gif);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+}
+
+.specs{
+    background-image: url(GIFbackgrounds/650sPerf.gif);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: center;    
+}
+
+.features{
+    background-image: url(GIFbackgrounds/650sHome.gif);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: center;    
+}

@@ -340,9 +340,19 @@ body {
     font-size: 15px;
     color: #222;
 }
+
+.survey .form .form-element #ratesite{
+    padding-left: 37px;
+    text-align: center;
+}
+
+
+
 .survey .form .form-element input[type="text"],
 .survey .form .form-element input[type="datetime"],
-.survey .form .form-element input[type="tel"]
+.survey .form .form-element input[type="tel"],
+.survey .form .form-element input[type="number"]
+
 {
     margin-top: 10px;
     display: block;

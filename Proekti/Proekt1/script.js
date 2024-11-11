@@ -109,5 +109,5 @@ document.querySelector(".survey .close-btn").addEventListener("click", function(
 
 document.querySelector(".survey .submit").addEventListener("click", function(){
     document.querySelector(".survey").classList.remove("active");
-    alert("Succefully created a Test Drive Booking.\nYou will be contacted by our team for more details.")
+    alert("Thank you for completing our survey!")
 });
