@@ -1,5 +1,7 @@
 let loggedin=0;
 
+
+// Log in popup
 function popupActive(){
     document.querySelector(".popup").classList.add("active");
 }
@@ -12,6 +14,9 @@ document.querySelector(".popup .close-btn").addEventListener("click", function()
     document.querySelector(".popup").classList.remove("active");
 });
 
+
+
+//Test Drive Popup
 document.querySelector("#tdrive").addEventListener("click", function(){
     if (loggedin===0) {
         popupActive();
@@ -51,6 +56,26 @@ document.querySelector(".popup .signedin").addEventListener("click", function ()
     }
 });
 
+
+
+//Survey Popup
+
+document.querySelector("#survey").addEventListener("click", function(){
+    
+    document.querySelector(".survey").classList.add("active");
+});
+
+document.querySelector(".survey .close-btn").addEventListener("click", function(){
+    document.querySelector(".survey").classList.remove("active");
+});
+
+document.querySelector(".survey .submit").addEventListener("click", function(){
+    document.querySelector(".survey").classList.remove("active");
+    alert("Thank you for completing our survey!")
+});
+
+
+//Likes
 function likedImage(image){
     if (loggedin===0) {
         popupActive();
@@ -95,19 +120,50 @@ window.onload = function () {
 }
 
 
-//check again:
 
 
-document.querySelector("#survey").addEventListener("click", function(){
-    
-    document.querySelector(".survey").classList.add("active");
-});
 
-document.querySelector(".survey .close-btn").addEventListener("click", function(){
-    document.querySelector(".survey").classList.remove("active");
-});
 
-document.querySelector(".survey .submit").addEventListener("click", function(){
-    document.querySelector(".survey").classList.remove("active");
-    alert("Thank you for completing our survey!")
+//Comments
+document.addEventListener("DOMContentLoaded", function () {
+    const posts = document.querySelectorAll(".post");
+
+    posts.forEach(post => {
+        const commentInput = post.querySelector(".comment-input");
+        const addCommentBtn = post.querySelector(".add-comment-btn");
+        const commentsList = post.querySelector(".comments-list");
+        const commentCount = post.querySelector(".commentN");
+
+        function updateCommentCount() {
+            commentCount.textContent = commentsList.children.length;
+        }
+
+        addCommentBtn.addEventListener("click", function(){
+            
+            if (loggedin===0) {
+                popupActive();
+                return;
+            }
+            const commentText = commentInput.value.trim();
+            if (commentText) {
+                const commentItem = document.createElement("li");
+                commentItem.textContent = commentText;
+
+                const deleteBtn = document.createElement("span");
+                deleteBtn.textContent = "Delete";
+                deleteBtn.classList.add("delete-comment");
+                
+                deleteBtn.addEventListener("click", function() {
+                    commentItem.remove();
+                    updateCommentCount();
+                });
+
+                commentItem.appendChild(deleteBtn);
+                commentsList.appendChild(commentItem);
+
+                commentInput.value = "";
+                updateCommentCount();
+            }
+        });
+    });
 });
