@@ -70,6 +70,44 @@
     </div>
 </div>
 
+<!-- survey pop up -->
+<div class="survey">
+    <div class="close-btn">&times;</div>
+    <div class="form">
+        <h2>Impressions Survey</h2>
+        <div class="form-element">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter full name">
+        </div>
+        <div class="form-element">
+            <label for="phone">Age</label>
+            <input type="number" id="age" placeholder="Enter your age">
+        </div>
+        <div class="form-element">
+            <label for="find">How did you find us?</label>
+            <select name="find" id="findus">
+                <option value="650s">GitHub</option>
+                <option value="570s">Referred by friend</option>
+                <option value="540c">Advertisement</option>
+                <option value="540c">Social Media</option>
+                <option value="540c">Other</option>
+            </select>
+        </div>
+        <div class="form-element">
+            <label for="rating">Rate our site!</label><br>
+            <label>1 <input name="rating" type="radio" value="L" /></label><br>
+            <label>2 <input name="rating" type="radio" value="L" /></label><br>
+            <label>3 <input name="rating" type="radio" value="L" /></label><br>
+            <label>4 <input name="rating" type="radio" value="L" /></label><br>
+            <label>5 <input name="rating" type="radio" value="L" /></label><br>
+        </div>
+        <div class="form-element">
+            <button class="submit" type="submit">Submit</button>
+        </div>
+    </div>
+</div>
+
+
 <body>
     <div id="home">
         <div id="welcome">
@@ -187,8 +225,8 @@
     </div>
 </body>
 
-<footer>
-    <p><span>CARIO © 2024</span><span>Partners</span><span>Dealership</span><span>Contact</span></p>
+<footer id = footer>
+    <p><span>CARIO © 2024</span><span>Partners</span><span>Dealership</span><span>Contact</span><span><a href="#footer" id="survey" style="text-decoration: none; color: #747679">Survey</a></span></p>
 </footer>
 <script src="script.js"></script>
 </html>

@@ -93,3 +93,21 @@ window.onload = function () {
         }
     });
 }
+
+
+//check again:
+
+
+document.querySelector("#survey").addEventListener("click", function(){
+    
+    document.querySelector(".survey").classList.add("active");
+});
+
+document.querySelector(".survey .close-btn").addEventListener("click", function(){
+    document.querySelector(".survey").classList.remove("active");
+});
+
+document.querySelector(".survey .submit").addEventListener("click", function(){
+    document.querySelector(".survey").classList.remove("active");
+    alert("Succefully created a Test Drive Booking.\nYou will be contacted by our team for more details.")
+});
