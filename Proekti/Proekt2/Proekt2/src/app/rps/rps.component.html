@@ -1,0 +1,21 @@
+<h2 role="heading" aria-level="2">Rock Paper Scissors</h2>
+
+<div class="score">
+  <p role="status" aria-live="polite" aria-label="Your score vs computer score">You &nbsp;{{ userScore }} | {{ computerScore }} &nbsp; 🤖 </p>
+</div>
+
+<div class="choices">
+  <button role="button" aria-label="Play with Rock" (click)="play('👊')">👊</button>
+  <button role="button" aria-label="Play with Paper" (click)="play('🤚')">🤚</button>
+  <button role="button" aria-label="Play with Scissors" (click)="play('✌️')">✌️</button>
+</div>
+
+<div *ngIf="result" class="result">
+  <p role="status" aria-live="assertive" aria-label="Computers choice">{{ computerChoice }}</p>
+</div>
+
+<div *ngIf="!result" class="waiting">
+  <p role="status" aria-live="polite" aria-label="Waiting for computer choice">🤖</p>
+</div>
+
+<button role="button" aria-label="Reset game" (click)="resetGame()">Reset Game</button>
